@@ -8,6 +8,7 @@ When you are building your custom AI to play the Gomuku game, ensure that you ma
 
 • gomoku.py: This module contains the implementation of the Gomoku game, including methods to
 list valid actions for every state, perform an action in a given state, and calculate the score in a game state.
+
 • compete.py: This module runs a full game between two players. Each player can be controlled by a human or various automated policies.
 • performance.py: This module runs several games between your AI and the baseline policy. The
 plots at the end visualize the final scores and run times of each AI. It saves the results in a file named perf.pkl.
