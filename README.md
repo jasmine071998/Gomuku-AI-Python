@@ -6,14 +6,17 @@ Built an efficient AI system that plays the Gomuku game.
 
 When you are building your custom AI to play the Gomuku game, ensure that you make the changes in submission.py only and not in any other file as the other files contain the implementation of the baseline minimax(i.e your opponent in the game)
 
-• gomoku.py: This module contains the implementation of the Gomoku game, including methods to
+● gomoku.py: This module contains the implementation of the Gomoku game, including methods to
 list valid actions for every state, perform an action in a given state, and calculate the score in a game state.
 
-• compete.py: This module runs a full game between two players. Each player can be controlled by a human or various automated policies.
-• performance.py: This module runs several games between your AI and the baseline policy. The
+● compete.py: This module runs a full game between two players. Each player can be controlled by a human or various automated policies.
+
+● performance.py: This module runs several games between your AI and the baseline policy. The
 plots at the end visualize the final scores and run times of each AI. It saves the results in a file named perf.pkl.
-• policies/: The modules in this sub-directory include various policies that can be selected for each
+
+● policies/: The modules in this sub-directory include various policies that can be selected for each
 player.
+
 o human.py: This policy is human-controlled
 o random.py: This policy chooses actions uniformly at random
 o minimax.py: This policy chooses actions using an augmented Minimax Search
@@ -32,8 +35,11 @@ Run the script performance.py to play your AI against the Minimax baseline. The 
 
 The Gomoku AI stands for a significant advancement planning mechanism. It has several new features that improve its ability to make decisions. The following are the implementation's key components:
 ● Custom evaluation functions: AI uses custom evaluation functions that go beyond the basic heuristics. Our implementation considers known patterns and their design values to examine both individual positions and board maps. It includes a sophisticated scoring system based on the potential of the sites against the number of open ends, and the length of stone lines, making it a clever projection point.
+
 ● Pattern recognition: Throughout the whole gameplay session, this AI can identify new patterns—a characteristic that is uncommon in the regular Minimax algorithm or simple MCTS implementation.
+
 ● Dynamic learning: The ‘learn_new_pattern’ approach demonstrates a new approach by dynamically updating the AI's existing knowledge during game play, allowing it to adapt to the opponent's strategies.
+
 ● Enhanced move ordering: The ‘get_prioritized_moves’ method introduces a sophisticated approach to the move selection. It focuses on central control and proximity to existing rocks. This is an algorithmic enhancement that improves the move selection process, and the final product.
 
 # Method
